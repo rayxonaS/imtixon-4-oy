@@ -1,30 +1,27 @@
 //Array1.
 //n natural soni berilgan. 3 sonining dastlabki n ta darajasidan tashkil topgan massivni qaytaruvchi getLevel3(n) nomli funksiya tuzing.
 
-/*et n = 5;
-let sum = 0;
-let arr = [];
-for (i = 0; i <= n; i++) {
-
-}
-console.log(sum); */
+/*let n = 5;
+let result = [];
+for (i = 1; i <= n; i++) {
+  sum = 3 ** i;
+  console.log(sum);
+}*/
 
 //Array2.
 //n natural soni va X, Y butun sonlari berilgan (n > 2).
 //a[0] = X, a[1] = Y.
 //Qolgan elementlari esa o‘zidan oldingi ikki element yig‘indisiga teng bo‘lgan massivni hosil qiling va chiqarib bering.
 
-let n = 6;
-const arr = [1, 2];
+/*let n = 6;
+let arr = [1, 2];
 let X = 1;
 let Y = 2;
-let sum = X + Y;
 
 for (i = 0; i < n - 2; i++) {
-  arr.push(sum);
-  sum = sum + sum;
+  arr.push(arr[i] + arr[i + 1]);
 }
-console.log(arr);
+console.log(arr);*/
 
 /*Array3.
 n ta elementdan tashkil topgan massiv berilgan.
@@ -73,6 +70,19 @@ arr.findIndex((item, index) => {
 console.log(even);
 console.log(odd);*/
 
+//Array6.
+//n ta elementdan tashkil topgan massiv berilgan.
+//Massivda eng ko‘p uchragan element va uning soni topilsin.
+
+/*let arr = [2, 3, 2, 5, 3, 3, 7, 2, 3];
+function getMoreElement(arr) {
+  const result = arr.filter((x) => {
+    arr.indexOf(x) != arr.lastIndexOf(x);
+  });
+}
+console.log(getMoreElement(arr));
+console.log(result);*/
+
 /*Array7.
 n ta elementdan tashkil topgan massiv va R butun soni berilgan.
 Massiv elementlari orasidan R soniga eng uzoq son topilsin.
@@ -114,4 +124,14 @@ arr.forEach((item) => {
   }
   return result;
 });
+console.log(result);*/
+
+//Array 10
+//n ta elementdan tashkil topgan massiv berilgan.
+//Massivning oxiridan boshlab har bir ikkinchi elementni chiqaruvchi programma tuzing.
+
+/*let arr = [4, 5, 7, 8, 6, 9, 10, 15];
+let prime = [4, 7, 6, 10];
+let secondary = [5, 8, 9, 15];
+let result = secondary.reverse();
 console.log(result);*/
