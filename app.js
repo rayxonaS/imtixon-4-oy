@@ -20,7 +20,6 @@ console.log(getLevel3(n));*/
 let arr = [1, 2];
 let X = 1;
 let Y = 2;
-
 for (i = 0; i < n - 2; i++) {
   arr.push(arr[i] + arr[i + 1]);
 }
@@ -110,12 +109,10 @@ Birinchi yarmi o‘zidan katta bo‘lgan elementlarni
 Ikkinchi yarmi o‘zidan kichik bo‘lgan elementlarni chiqarib bering.
 
 let arr = [7, 3, 9, 1, 8, 2, 4];
-
 const bigNumbers = arr.filter((item) => {
   return item > 5;
 });
 console.log(bigNumbers);
-
 const smallNumbers = arr.filter((item) => {
   return item < 5;
 });
