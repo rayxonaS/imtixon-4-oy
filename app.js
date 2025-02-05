@@ -2,11 +2,14 @@
 //n natural soni berilgan. 3 sonining dastlabki n ta darajasidan tashkil topgan massivni qaytaruvchi getLevel3(n) nomli funksiya tuzing.
 
 /*let n = 5;
-let result = [];
-for (i = 1; i <= n; i++) {
-  sum = 3 ** i;
-  console.log(sum);
-}*/
+function getLevel3(n) {
+  let result = [];
+  for (i = 1; i <= n; i++) {
+    result.push(3 ** i);
+  }
+  return result;
+}
+console.log(getLevel3(n));*/
 
 //Array2.
 //n natural soni va X, Y butun sonlari berilgan (n > 2).
@@ -74,14 +77,14 @@ console.log(odd);*/
 //n ta elementdan tashkil topgan massiv berilgan.
 //Massivda eng ko‘p uchragan element va uning soni topilsin.
 
-/*let arr = [2, 3, 2, 5, 3, 3, 7, 2, 3];
-function getMoreElement(arr) {
-  const result = arr.filter((x) => {
-    arr.indexOf(x) != arr.lastIndexOf(x);
-  });
-}
-console.log(getMoreElement(arr));
-console.log(result);*/
+let arr = [2, 3, 2, 5, 3, 3, 7, 2, 3];
+let counter = 0;
+const result = arr.filter((x) => {
+  arr.indexOf(x) == arr.lastIndexOf(x);
+  counter++;
+});
+console.log(result);
+console.log("Soni:", counter);
 
 /*Array7.
 n ta elementdan tashkil topgan massiv va R butun soni berilgan.
@@ -120,7 +123,7 @@ console.log(smallNumbers); */
 const result = [];
 arr.forEach((item) => {
   if (!result.includes(item)) {
-    result.push(item);
+    result.push(item, item);
   }
   return result;
 });
