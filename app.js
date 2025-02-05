@@ -77,14 +77,20 @@ console.log(odd);*/
 //n ta elementdan tashkil topgan massiv berilgan.
 //Massivda eng ko‘p uchragan element va uning soni topilsin.
 
-let arr = [2, 3, 2, 5, 3, 3, 7, 2, 3];
+/*let arr = [2, 3, 2, 5, 3, 3, 7, 2, 3];
+let result = [];
 let counter = 0;
-const result = arr.filter((x) => {
-  arr.indexOf(x) == arr.lastIndexOf(x);
-  counter++;
+arr.forEach((item) => {
+  for (i = 0; i <= arr.length; i++) {
+    if (!result.includes(item)) {
+      result.push(item);
+      counter++;
+    }
+  }
+  return result;
 });
 console.log(result);
-console.log("Soni:", counter);
+console.log("Soni:", counter);*/
 
 /*Array7.
 n ta elementdan tashkil topgan massiv va R butun soni berilgan.
